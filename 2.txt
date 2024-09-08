@@ -1,5 +1,0 @@
-{
-    "name": "Vasya",
-    "surname": "Pupkin",
-    "Age": 28
-}
