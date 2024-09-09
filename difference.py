@@ -1,5 +1,19 @@
 import difflib
 import os
+import argparse
+
+def read_terminal():
+    parser = argparse.ArgumentParser(description='Differences between two text files')
+
+    parser.add_argument('file1', type = str, help = 'Path to first file')
+    parser.add_argument('file2', type = str, help = 'Path to second file')
+
+    args = parser.parse_args()
+
+    file1 = args.file1
+    file2 = args.file2
+
+    return file1, file2
 
 def read_file(file_path):
     assert os.path.exists(file_path), f"File '{file_path}' not exists"
@@ -27,13 +41,10 @@ def compare_files(file1_path, file2_path):
             diff.append(line)
 
     # Print differences
+    print("\nResult:")
     print('\n'.join(diff))
 
 
 if __name__ == "__main__":
-    print("This script shows differences between two text files.")
-    file1 = input("Path to first file: ")
-    file2 = input("Path to second file: ")
-    print("\nResult:")
-
+    file1, file2 = read_terminal()
     compare_files(file1, file2)
