@@ -14,9 +14,9 @@ Script to show difference between two files.
 
 **Usage:**
 
-1. Launch script **difference.py** using terminal for example.
-2. Input path to first file.
-3. Input path to second file.
-
-3. Script should show difference only in lines with differences. Except differences in whitespace characters from the beginning and end of each line.
+1. Launch script **difference.py** using terminal. Add arguments with paths to files. For example enter:
+   ```bash
+   python difference.py 1.json 2.json
+   ```
+2. Script should show only lines with differences. Except differences in whitespace characters from the beginning and end of each line.
 
