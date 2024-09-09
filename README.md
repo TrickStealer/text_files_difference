@@ -8,7 +8,7 @@ Script to show difference between two files.
 | File                | Description                                                  |
 | ------------------- | ------------------------------------------------------------ |
 | difference.py       | File with code of the script                                 |
-| 1. json <br/>2.json | Example files with simple json code to check how script works. They have only one difference in value of key "age" and in count of spaces ahead of line |
+| 1.json <br/>2.json | Example files with simple json code to check how script works. They have only one difference in value of key "age" and in count of spaces ahead of line |
 
 <br/>
 
